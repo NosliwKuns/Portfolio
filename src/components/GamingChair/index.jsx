@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 const GamingChair = (props) => {
-  const { nodes, materials } = useGLTF("/src/assets/gaming-chair.glb");
+  const { nodes, materials } = useGLTF("/gaming-chair.glb");
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
@@ -87,4 +87,4 @@ const GamingChair = (props) => {
 
 export default GamingChair;
 
-useGLTF.preload("/src/assets/gaming-chair.glb");
+useGLTF.preload("/gaming-chair.glb");

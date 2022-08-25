@@ -6,7 +6,7 @@ import Model from './../Model-animated';
 import GamingChair from "./GamingChair";
 
 export default function Planets(props) {
-  const { nodes, materials } = useGLTF("/src/assets/planets.glb");
+  const { nodes, materials } = useGLTF("/planets.glb");
   const ref = useRef();
   const leftP = useRef();
   const sceneRef = useRef();
@@ -1261,5 +1261,5 @@ export default function Planets(props) {
   );
 }
 
-useGLTF.preload("/src/assets/planets.glb");
+useGLTF.preload("/planets.glb");
 

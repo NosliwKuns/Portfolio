@@ -24,7 +24,7 @@ const ModelShip = ({
   inViewPageThree,
   ...props
 }) => {
-  const { nodes, materials } = useGLTF("/src/assets/scene.glb");
+  const { nodes, materials } = useGLTF("/scene.glb");
   const ref = useRef();
   const [hovered, setHover] = useState(false);
   const [playing, toggle] = useAudio(
@@ -132,4 +132,4 @@ const ModelShip = ({
 
 export default ModelShip;
 
-useGLTF.preload("/src/assets/scene.glb");
+useGLTF.preload("/scene.glb");

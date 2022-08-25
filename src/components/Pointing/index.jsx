@@ -4,7 +4,7 @@ import { useThree } from '@react-three/fiber';
 
 export function Pointing(props) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF("/src/assets/pointing.glb");
+  const { nodes, materials, animations } = useGLTF("/pointing.glb");
   const { actions } = useAnimations(animations, group);
   const { width: w, height: h } = useThree((state) => state.viewport);
 
@@ -84,4 +84,4 @@ export function Pointing(props) {
   );
 }
 
-useGLTF.preload("/src/assets/pointing.glb");
+useGLTF.preload("/pointing.glb");

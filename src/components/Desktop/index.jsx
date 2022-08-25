@@ -38,7 +38,7 @@ function Bloom({ children }) {
 }
 
 export function Desktop(props) {
-  const { nodes, materials } = useGLTF("/src/assets/desktop.glb");
+  const { nodes, materials } = useGLTF("/desktop.glb");
   const ref = useRef();
   const [colorMap] = useTexture([
     "https://res.cloudinary.com/dbqlsilt2/image/upload/c_scale,h_154,r_8/v1660889629/a/outrun-vaporwave-hd-wallpaper-thumb_qltfxp.jpg",
@@ -676,4 +676,4 @@ export function Desktop(props) {
   );
 }
 
-useGLTF.preload("/src/assets/desktop.glb");
+useGLTF.preload("/desktop.glb");

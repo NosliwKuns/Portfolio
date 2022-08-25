@@ -7,7 +7,7 @@ export function LittleIsland(props) {
 
   const { width: w, height: h } = useThree((state) => state.viewport);
 
-  const { nodes, materials } = useGLTF("/src/assets/little-island.glb");
+  const { nodes, materials } = useGLTF("/little-island.glb");
   return (
     <group {...props} dispose={null} scale={1} >
       <Pointing />
@@ -83,4 +83,4 @@ export function LittleIsland(props) {
   );
 }
 
-useGLTF.preload("/src/assets/little-island.glb");
+useGLTF.preload("/little-island.glb");

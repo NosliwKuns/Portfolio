@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100;1,600;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+//----fonts-----//
+
+$poppins-font: 'Poppins', sans-serif;
+$fugaz-font: 'Fugaz One', cursive;
+
+//----colors-----//@at-root
+$cyan: #35e1ff;
+
+body {
+  font-family: $poppins-font;
+}

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-import '../styles/Navbar.scss';
+// import '../styles/Navbar.scss';
 import { useScroll } from '@react-three/drei';
 
 const NavBar = ({setPageScroll}) => {

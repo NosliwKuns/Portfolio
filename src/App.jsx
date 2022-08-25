@@ -225,7 +225,7 @@ const App = () => {
 
         <StarsRotate />
         <ScrollControls offset={2} damping={8} pages={6}>
-          {/* <Suspense fallback={null}> */}
+          <Suspense fallback={null}>
           <Scroll>
             <Sparkles
               count={scale.length}
@@ -241,7 +241,7 @@ const App = () => {
             {/* <Particles /> */}
           </Scroll>
           <Preload all />
-          {/* </Suspense> */}
+          </Suspense>
           {/* <Items /> */}
           <Rig />
           <HtmlContent

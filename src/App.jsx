@@ -38,7 +38,7 @@ import { BsGithub } from "react-icons/bs";
 import { FaTwitterSquare } from "react-icons/fa";
 import Video from "./components/Video/index";
 
-extend({ UnrealBloomPass });
+// extend({ UnrealBloomPass });
 
 const StarsRotate = () => {
   const stars = useRef();
@@ -49,7 +49,7 @@ const StarsRotate = () => {
         ref={stars}
         /* radius={500} depth={50} count={1000}  */ factor={3}
         saturation={1}
-        count={2000}
+        count={1000}
       />
     </>
   );
@@ -103,8 +103,7 @@ const App = () => {
 
   const conditional = inViewPageTwo || inViewPageThree || inViewPageFour || inViewPageFive;
 
-  const [cursorX, setCursorX] = useState();
-  const [cursorY, setCursorY] = useState();
+
 
   // window.addEventListener('mousemove', (e) => {
   //   setCursorX(e.pageX);
@@ -113,7 +112,19 @@ const App = () => {
 
   const scale = Array.from({ length: 50 }, () => 0.5 + Math.random() * 4);
 
-  console.log(pageScroll);
+  const [mQuery, setMQuery] = useState({
+    matches: window.innerWidth > 768 ? true : false,
+  });
+
+  useEffect(() => {
+    let mediaQuery = window.matchMedia("(min-width: 768px)");
+    mediaQuery.addListener(setMQuery);
+    // this is the cleanup function to remove the listener
+    return () => mediaQuery.removeListener(setMQuery);
+  }, []);
+
+  console.log(mQuery, 'boolean')
+
   return (
     <>
       <Cursor />
@@ -165,12 +176,12 @@ const App = () => {
       </div>
       <Canvas
         className="holi"
-        dpr={[1.5, 1]}
+        dpr={[1, .9 ]}
         linear
         shadows
         gl={{
           outputEncoding: THREE.sRGBEncoding,
-          toneMapping: THREE.ACESFilmicToneMapping,
+          // toneMapping: THREE.ACESFilmicToneMapping,
           toneMappingExposure: 0.4,
         }}
       >
@@ -212,8 +223,8 @@ const App = () => {
         {/* <Effects disableGamma>
           <unrealBloomPass threshold={2} strength={1.0} radius={0.5} />
         </Effects> */}
-        <BakeShadows />
-        {
+        {/* <BakeShadows /> */}
+        { mQuery.matches &&
           <OrbitControls
             maxPolarAngle={Math.PI / 2}
             minPolarAngle={Math.PI / 2}

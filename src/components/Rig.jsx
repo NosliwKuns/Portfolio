@@ -9,7 +9,7 @@ const Rig = () => {
   const [vec] = useState(() => new THREE.Vector3());
   const { camera, mouse, size } = useThree();
   useFrame(() => {
-    camera.position.lerp(vec.set(mouse.x * .5, 3, 5), 0.05)
+    camera.position.lerp(vec.set(mouse.x * .5, 0, 5), 0.05)
   }); 
 
   

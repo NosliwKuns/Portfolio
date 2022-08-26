@@ -175,10 +175,9 @@ const App = () => {
         <div />
       </div>
       <Canvas
-        className="holi"
-        dpr={[1, .9 ]}
-        linear
-        shadows
+        dpr={[1, 1 ]}
+        // linear
+        // shadows
         gl={{
           outputEncoding: THREE.sRGBEncoding,
           // toneMapping: THREE.ACESFilmicToneMapping,
@@ -246,12 +245,12 @@ const App = () => {
               speed={0.5}
             />
             <ModelShip inViewPageTwo={inViewPageTwo} inViewPageThree={inViewPageThree} />
-            <Planets position={[0, -2, 0]} />
+            {/* <Planets position={[0, -2, 0]} /> */}
             <LittleIsland />
 
             {/* <Particles /> */}
           </Scroll>
-          <Preload all />
+          {/* <Preload all /> */}
           </Suspense>
           {/* <Items /> */}
           <Rig />
@@ -273,6 +272,7 @@ const App = () => {
             inViewPageFive={inViewPageFive}
           />
         </ScrollControls>
+        <Preload all />
       </Canvas>
       <div className="layer" />
       <div className="contact">

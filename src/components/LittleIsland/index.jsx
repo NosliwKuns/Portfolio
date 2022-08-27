@@ -10,6 +10,7 @@ export function LittleIsland(props) {
   const { nodes, materials } = useGLTF("/little-island.glb");
   return (
     <group {...props} dispose={null} scale={1} >
+      
       <Pointing />
       <group
         position={[w / 3.5, -10.3, 0]}

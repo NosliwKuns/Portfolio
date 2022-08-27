@@ -37,6 +37,9 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { FaTwitterSquare } from "react-icons/fa";
 import Video from "./components/Video/index";
+import Typing from './components/Typing';
+import Rocket from './components/Rocket';
+
 
 // extend({ UnrealBloomPass });
 
@@ -179,7 +182,7 @@ const App = () => {
         // linear
         // shadows
         gl={{
-          outputEncoding: THREE.sRGBEncoding,
+          // outputEncoding: THREE.sRGBEncoding,
           // toneMapping: THREE.ACESFilmicToneMapping,
           toneMappingExposure: 0.4,
         }}
@@ -204,7 +207,7 @@ const App = () => {
           color="tomato"
           intensity={1.5}
         />
-        <PerspectiveCamera makeDefault position={[-6, 0, 0]} fov={72}>
+        {/* <PerspectiveCamera makeDefault position={[-6, 0, 0]} fov={72}>
           <pointLight intensity={4} color="purple" position={[-15, -25, 10]} />
 
           <spotLight
@@ -217,7 +220,7 @@ const App = () => {
             shadow-mapSize={[1024, 1024]}
             // shadow-bias={-0.0001}
           />
-        </PerspectiveCamera>
+        </PerspectiveCamera> */}
         <Environment preset={"sunset"} />
         {/* <Effects disableGamma>
           <unrealBloomPass threshold={2} strength={1.0} radius={0.5} />
@@ -246,6 +249,7 @@ const App = () => {
             />
             <ModelShip inViewPageTwo={inViewPageTwo} inViewPageThree={inViewPageThree} />
             {/* <Planets position={[0, -2, 0]} /> */}
+            <Typing />
             <LittleIsland />
 
             {/* <Particles /> */}

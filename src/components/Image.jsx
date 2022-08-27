@@ -102,12 +102,12 @@ function Images({
         <a.ImageFadeMaterial
           ref={ref}
           tex={texture1}
-          tex-encoding={THREE.sRGBEncoding}
+          // tex-encoding={THREE.sRGBEncoding}
           tex2={texture2}
-          tex2-encoding={THREE.sRGBEncoding}
+          // tex2-encoding={THREE.sRGBEncoding}
           disp={dispTexture}
-          disp-encoding={THREE.sRGBEncoding}
-          toneMapped={false}
+          // disp-encoding={THREE.sRGBEncoding}
+          toneMapped={true}
           {...prop}
         />
       </a.mesh>

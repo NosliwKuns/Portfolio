@@ -188,7 +188,7 @@ const App = () => {
         }}
       >
         <fog attach="fog" args={["fff", 10, 30]} />
-        <ambientLight intensity={0.75} color={"#fff"} />
+        {/* <ambientLight intensity={0.75} color={"#fff"} /> */}
         <directionalLight
           castShadow
           position={[2.5, 2, -15]}
@@ -284,7 +284,7 @@ const App = () => {
         <BsGithub size={28} />
         <FaTwitterSquare size={32} />
       </div>
-      <Loader />
+      {/* <Loader /> */}
     </>
   );
 }

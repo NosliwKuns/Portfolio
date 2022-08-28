@@ -182,7 +182,7 @@ const App = () => {
         // linear
         // shadows
         gl={{
-          // outputEncoding: THREE.sRGBEncoding,
+          outputEncoding: THREE.sRGBEncoding,
           // toneMapping: THREE.ACESFilmicToneMapping,
           toneMappingExposure: 0.4,
         }}

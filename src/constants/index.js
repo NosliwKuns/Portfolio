@@ -14,11 +14,11 @@ import {
   mongodb,
   git,
   figma,
-  docker,
+  postgresql,
   meta,
-  starbucks,
-  tesla,
-  shopify,
+  henry,
+  footloose,
+  biodiserly,
   carrent,
   jobit,
   tripguide,
@@ -110,7 +110,7 @@ const technologies = [
   },
   {
     name: "docker",
-    icon: docker,
+    icon: postgresql,
   },
 ];
 
@@ -118,7 +118,7 @@ const experiences = [
   {
     title: "Full-Stack Teaching Assistant",
     company_name: "Henry Bootcamp",
-    icon: starbucks,
+    icon: henry,
     iconBg: "#FFFF00",
     date: "Jun 2022 - Aug 2022",
     points: [
@@ -131,7 +131,7 @@ const experiences = [
   {
     title: "Junior Programmer",
     company_name: "Footloose Perú",
-    icon: tesla,
+    icon: footloose,
     iconBg: "#fff",
     date: "Sep 2022 - Jan 2023",
     points: [
@@ -144,7 +144,7 @@ const experiences = [
   {
     title: "Web Developer",
     company_name: "Biodiserly",
-    icon: shopify,
+    icon: biodiserly,
     iconBg: "#383E56",
     date: "April 2023",
     points: [

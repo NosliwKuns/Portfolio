@@ -8,7 +8,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
+import postgresql from "./tech/postgresql.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -22,9 +22,9 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import biodiserly from "./company/biodiserly.png";
+import henry from "./company/henry.png";
+import footloose from "./company/footloose.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -40,7 +40,7 @@ export {
   menu,
   close,
   css,
-  docker,
+  postgresql,
   figma,
   git,
   html,
@@ -53,9 +53,9 @@ export {
   typescript,
   threejs,
   meta,
-  shopify,
-  starbucks,
-  tesla,
+  biodiserly,
+  henry,
+  footloose,
   carrent,
   jobit,
   tripguide,

@@ -19,8 +19,8 @@ import {
   henry,
   footloose,
   biodiserly,
-  carrent,
-  jobit,
+  mangaCoffee,
+  countryAcademy,
   tripguide,
   threejs,
 } from "../assets";
@@ -159,35 +159,35 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "I've worked with Antoni on the Manga Coffee project and it has been an amazing experience working with him, he's super analytical, excellent problem solver and very self-taught, he's always learning new things, he's also super creative and great professional. He's incredibly capable of doing anything he sets his mind to. By hiring Antoni you'll not only gain a super professional in your team but an amazing person who will contribute in every way to the company.",
+    name: "Andrea Carvajal Osorio",
+    designation: "Full Stack Developer",
+    company: "",
+    image: "https://ca.slack-edge.com/TPRS7H4PN-U0368FERG85-6c67e2a7ec1b-512",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Trabajé con Antoni en el desarrollo de una aplicación, lo cual representó un gran desafío para todo el grupo, ya que se implementaron nuevas tecnologías y se debió lidiar con la precisión. Antoni se mantuvo siempre calmado y creó un ambiente jovial y amigable, lo cual favoreció el desarrollo personal y grupal. Él se encargó del diseño y la temática de la página.",
+    name: "Ronaldo Jara",
+    designation: "Frontend Developer",
+    company: "LearnAla",
+    image: "https://media.licdn.com/dms/image/D4E03AQG6y7JxPrdXVw/profile-displayphoto-shrink_800_800/0/1669516316274?e=1688601600&v=beta&t=oxUcEOHFRru1lnMsqanT7nTpadN8ACXU5jKojgUwWds",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Es realmente una persona increíble, con un impresionante dominio técnico y facilidad para implementar nuevas tecnologías. Aquellos que tengan la oportunidad de trabajar con él encontrarán a una persona sociable, dispuesta a apoyar y transmitir todos sus conocimientos. Tuve la posibilidad de programar con él en el proyecto final 'Manga Coffee' del Bootcamp de Henry, donde pude apreciar cada una de sus habilidades. Se encontrarán con una gran persona y un excelente profesional.",
+    name: "Gabriel valencia morales",
+    designation: "Full Stack Developer",
+    company: "",
+    image: "https://media.licdn.com/dms/image/C5603AQFHEl85YALsJw/profile-displayphoto-shrink_800_800/0/1652916282057?e=1688601600&v=beta&t=ipjhQ4l4gLARtQwQRDFbcg5z238xn4Jq-_6vtH9WOdo",
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Manga Coffee",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to search and read mangas. Additionally, you can interact with other manga fans through our online chat feature.",
     tags: [
       {
         name: "react",
@@ -198,49 +198,49 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "sass",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: mangaCoffee,
+    source_code_link: "https://github.com/NosliwKuns/MANGA-COFFEE",
   },
   {
-    name: "Job IT",
+    name: "Country Academy",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Online course platform that allows access to a variety of courses covering different topics and skill levels. Enjoy a dynamic and effective learning experience.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "node.js",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: countryAcademy,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Biodiserly",
+    description:
+      "Biodiserly is an online store for natural products that I built from scratch. The platform is intuitive, easy to navigate for customers, and visually appealing.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      // {
+      //   name: "supabase",
+      //   color: "green-text-gradient",
+      // },
+      {
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
     ],

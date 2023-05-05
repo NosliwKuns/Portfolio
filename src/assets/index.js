@@ -26,8 +26,8 @@ import biodiserly from "./company/biodiserly.png";
 import henry from "./company/henry.png";
 import footloose from "./company/footloose.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
+import mangaCoffee from "./manga-coffee.png";
+import countryAcademy from "./country-academy.png";
 import tripguide from "./tripguide.png";
 
 export {
@@ -56,7 +56,7 @@ export {
   biodiserly,
   henry,
   footloose,
-  carrent,
-  jobit,
+  mangaCoffee,
+  countryAcademy,
   tripguide,
 };

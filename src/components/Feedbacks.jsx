@@ -13,15 +13,15 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
       <p className="text-white font-black text-[48px]">"</p>
 
       <div className="flex flex-col mt-1 justify-between	 h-full">
-        <p className="text-white tracking-wider text-[16px]">{testimonial}</p>
+        <p className="text-white tracking-wider text-[13px]">{testimonial}</p>
 
         <div className="mt-7 flex items-center gap-1">
           <div className="flex-1 flex flex-col">
             <p className="text-white font-medium text-[15px]">
-              <span>@</span> {name}
+              {name}
             </p>
             <p className="mt-1 text-secondary text-[12px]">
-              {designation} of {company}
+              {designation} {company ? "of" : ''} {company}
             </p>
           </div>
 

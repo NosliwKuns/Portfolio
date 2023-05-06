@@ -28,7 +28,7 @@ import footloose from "./company/footloose.png";
 
 import mangaCoffee from "./manga-coffee.png";
 import countryAcademy from "./country-academy.png";
-import tripguide from "./tripguide.png";
+import biodiserlyWeb from "./biodiserly-web.png";
 
 export {
   logo,
@@ -58,5 +58,5 @@ export {
   footloose,
   mangaCoffee,
   countryAcademy,
-  tripguide,
+  biodiserlyWeb,
 };

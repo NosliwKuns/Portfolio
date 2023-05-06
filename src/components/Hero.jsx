@@ -7,7 +7,7 @@ import Loader from './Loader';
 
 const Hero = () => {
   return (
-    <section className='relative w-full h-screen mx-auto'>
+    <section className='relative w-full h-screen mx-auto overflow-hidden'>
       <div 
         className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
@@ -33,7 +33,7 @@ const Hero = () => {
         {/* <Suspense fallback={'loading'}>
           <Test />
         </Suspense> */}
-        <img className='absolute h-[60%] bottom-6 left-1/2 -translate-x-1/2' src='https://res.cloudinary.com/dbqlsilt2/image/upload/v1683354403/my-space_ftjo2c.webp' />
+        <img className='absolute w-[100%] scale-[2] bottom-0 left-1/2 -translate-y-1/2  -translate-x-1/2 md:scale-100 md:-translate-y-0 lg:h-[65vh] lg:w-auto' src='https://res.cloudinary.com/dbqlsilt2/image/upload/v1683354403/my-space_ftjo2c.webp' />
       {/* </div> */}
       {/* <ComputersCanvas /> */}
 

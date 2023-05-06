@@ -21,7 +21,7 @@ import {
   biodiserly,
   mangaCoffee,
   countryAcademy,
-  tripguide,
+  biodiserlyWeb,
   threejs,
 } from "../assets";
 
@@ -244,8 +244,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: biodiserlyWeb,
+    source_code_link: "",
   },
 ];
 

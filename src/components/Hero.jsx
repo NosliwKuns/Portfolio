@@ -29,11 +29,12 @@ const Hero = () => {
         </div>
 
       </div>
-      <div className='absolute h-screen w-full'>
-        <Suspense fallback={'loading'}>
+      {/* <div className='absolute h-screen w-full'> */}
+        {/* <Suspense fallback={'loading'}>
           <Test />
-        </Suspense>
-      </div>
+        </Suspense> */}
+        <img className='absolute h-[60%] bottom-6 left-1/2 -translate-x-1/2' src='https://res.cloudinary.com/dbqlsilt2/image/upload/v1683354403/my-space_ftjo2c.webp' />
+      {/* </div> */}
       {/* <ComputersCanvas /> */}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>

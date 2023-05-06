@@ -15,6 +15,8 @@
     "@react-three/fiber": "^8.13.0",
     "@splinetool/loader": "^0.9.324",
     "@splinetool/r3f-spline": "^1.0.2",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.325",
     "framer-motion": "^10.12.7",
     "maath": "^0.5.3",
     "react": "^18.2.0",

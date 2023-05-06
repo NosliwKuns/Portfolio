@@ -1,6 +1,9 @@
+import React, { Suspense } from 'react';
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { ComputersCanvas } from './canvas'
+import Test from './Test'
+import Loader from './Loader';
 
 const Hero = () => {
   return (
@@ -26,7 +29,12 @@ const Hero = () => {
         </div>
 
       </div>
-      <ComputersCanvas />
+      <div className='absolute h-screen w-full'>
+        <Suspense fallback={'loading'}>
+          <Test />
+        </Suspense>
+      </div>
+      {/* <ComputersCanvas /> */}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
